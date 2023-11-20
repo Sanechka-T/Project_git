@@ -10,6 +10,7 @@ while name_file != 'quit':
     f_s.close()
     name_file = input('Введите название файла ')
 
+'''Удалил лишние \n'''
 alpha_arr = set()
 n = 0
 for i in range(len(All_str_arr)):
@@ -17,12 +18,14 @@ for i in range(len(All_str_arr)):
         All_str_arr[i] = All_str_arr[i][:-1]
 print(All_str_arr)
 
+'''Записал все возможные буквы во множество'''
 for i in All_str_arr:
     for j in i:
         alpha_arr.add(j.lower())
 n = 0
 print(alpha_arr)
 alpha_finish = set()
+'''Провека на наличие во всех файлах'''
 for i in alpha_arr:
     for j in file_str_arr:
         j = ''.join(j)
