@@ -1,4 +1,6 @@
 def print_name():
     print('Семён')
 
-print_name()
+
+for i in range(2):
+    print_name()
