@@ -1,4 +1,7 @@
 def print_name():
     print('Александр')
 
-print_name()
+for i in range(10):
+    print_name()
+
+# print_name()
